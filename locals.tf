@@ -4,7 +4,7 @@ locals {
   environment_prefix = "${var.project_name}-${var.environment}"
 
   # Standard naming convention for resources.
-  resource_name = "${local.environment_prefix}-app"
+  name_prefix = "${local.environment_prefix}-vpc"
 
   # Common tags applied to most resources for governance and cost allocation.
   common_tags = {
