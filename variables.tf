@@ -75,6 +75,13 @@ variable "key_pair_name" {
   default     = "my-key-pair"
 }
 
+# CIDR block allowed to connect to the bastion host over SSH.
+variable "allowed_ssh_cidr" {
+  description = "CIDR block allowed to reach the bastion host over SSH."
+  type        = string
+  default     = "0.0.0.0/0"
+}
+
 # Desired number of application instances.
 variable "autoscaling_desired_capacity" {
   description = "Desired number of instances in the application autoscaling group."
