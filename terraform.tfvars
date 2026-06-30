@@ -13,3 +13,4 @@ autoscaling_desired_capacity = 5
 autoscaling_min_size         = 3
 autoscaling_max_size         = 7
 db_instance_class            = "db.t3.micro"
+skip_final_snapshot          = true

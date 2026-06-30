@@ -130,3 +130,10 @@ variable "db_password" {
   type        = string
   sensitive   = true
 }
+
+# Whether to skip the final snapshot when deleting the RDS instance.
+variable "skip_final_snapshot" {
+  description = "Whether to skip the final snapshot when destroying the RDS instance."
+  type        = bool
+  default     = true
+}
